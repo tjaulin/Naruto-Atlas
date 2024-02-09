@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Variables */
+:root {
+    --main-color: orange;
+    --secondary-color: #88dff3;
+    --tertiary-color: orange;
+}
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'njnaruto';
+    src: url('../fonts/njnaruto.ttf') format('truetype');
+}
+
+body {
+    font-family: 'njnaruto', Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    background: linear-gradient(90deg, rgba(255,192,1,1) 0%, rgba(255,148,0,1) 65%, rgba(255,91,1,1) 100%);
+}
+
+/* 
+.content {
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+} */
