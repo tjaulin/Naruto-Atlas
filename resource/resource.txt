@@ -1,0 +1,68 @@
+Description : 
+
+Francais :
+Bienvenue sur Naruto Atlas !
+
+Naruto Atlas est votre guide ultime pour le vaste et captivant monde de Naruto. Que vous soyez un fan de longue date de la série ou que vous commenciez tout juste votre voyage dans l'univers rempli de ninjas, notre plateforme est là pour vous fournir des informations complètes, un contenu engageant et des fonctionnalités passionnantes.
+
+Explorez l'histoire riche et la mythologie de Naruto à travers notre base de données exhaustive, qui comprend des profils détaillés des personnages, des villages, des clans, des techniques de jutsu, et bien plus encore. Plongez dans les récits captivants, les relations complexes et les batailles épiques qui ont fait de Naruto une franchise adorée dans le monde entier.
+
+Avec Naruto Atlas, vous pouvez :
+
+    Découvrir des profils de personnages approfondis, avec des biographies, des capacités et des images.
+    Explorer des informations détaillées sur les villages, les clans et d'autres aspects clés de l'univers de Naruto.
+    Apprendre à propos de diverses techniques de jutsu, leurs origines et comment elles sont utilisées en combat.
+    Rester informé des dernières actualités, mises à jour et annonces du monde de Naruto.
+
+Que vous recherchiez vos personnages préférés, que vous vous remémoriez vos connaissances sur Naruto ou que vous vous immergiez simplement dans le monde fantastique des ninjas et des shinobi, Naruto Atlas est votre compagnon ultime.
+
+Rejoignez-nous dans ce voyage épique à travers le monde ninja, et laissez Naruto Atlas être votre guide à chaque étape.
+
+Commencez à explorer dès maintenant et libérez le pouvoir de votre ninja intérieur !
+
+---------------------------------------------------------------------------------------
+
+Anglais :
+
+Welcome to Naruto Atlas!
+
+Naruto Atlas is your ultimate guide to the vast and captivating world of Naruto. Whether you're a long-time fan of the series or just beginning your journey into the ninja-filled universe, our platform is here to provide you with comprehensive information, engaging content, and exciting features.
+
+Explore the rich history and lore of Naruto through our extensive database, which includes detailed profiles of characters, villages, clans, jutsu techniques, and much more. Dive deep into the captivating narratives, intricate relationships, and epic battles that have made Naruto a beloved franchise worldwide.
+
+With Naruto Atlas, you can:
+
+    Discover in-depth character profiles, complete with biographies, abilities, and images.
+    Explore detailed information about villages, clans, and other key aspects of the Naruto universe.
+    Learn about various jutsu techniques, their origins, and how they are used in combat.
+    Stay up-to-date with the latest news, updates, and announcements from the world of Naruto.
+
+Whether you're researching your favorite characters, brushing up on your Naruto knowledge, or simply immersing yourself in the fantastical world of ninjas and shinobi, Naruto Atlas is your ultimate companion.
+
+Join us on this epic journey through the ninja world, and let Naruto Atlas be your guide every step of the way.
+
+Start exploring now and unleash the power of your inner ninja!
+
+---------------------------------------------------------------------------------------
+
+Exemple de site (pour s'inspirer) : 
+https://naruto-db.vercel.app/
+https://vikhyatsingh123.github.io/Naruto-Shippuden/ - S'inspirer des couleurs
+
+
+---------------------------------------------------------------------------------------
+Pour les images manquantes (a voir) : 
+https://api.jikan.moe/v4/anime/1735/characters
+
+
+
+---------------------------------------------------------------------------------------
+Loader :
+
+<!-- FUTUR LOADER -->
+<!-- <div class="loader-container position-absolute top-50 start-50 translate-middle">
+    <img src="./img/loader/naruto-loader.gif" alt="naruto loader">
+    <img src="./img/loader/sasuke-loader.gif" alt="sasuke loader">
+    <img src="./img/loader/sakura-loader.gif" alt="sakura loader">
+    <img src="./img/loader/kakashi-loader.gif" alt="kakashi loader">
+</div> -->
