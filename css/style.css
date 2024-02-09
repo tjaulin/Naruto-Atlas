@@ -19,13 +19,20 @@
 }
 
 body {
-    font-family: 'njnaruto', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: var(--secondary-color);
 }
 
 nav {
+    font-family: 'njnaruto', Helvetica, sans-serif;
     background: linear-gradient(90deg, rgba(255,192,1,1) 0%, rgba(255,148,0,1) 65%, rgba(255,91,1,1) 100%);
 }
+
+.presentation {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
 
 /* 
 .content {
