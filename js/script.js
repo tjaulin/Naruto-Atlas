@@ -5,30 +5,27 @@ $('.characters-button').on('click', function(e) {
     launchLoader();
     getAllCharacters();
     $('.active').removeClass('active');
-    $('.nav-link.characters-button').addClass('active')
+    $('.nav-link.characters-button').addClass('active');
 });
 
 async function getAllCharacters() {
     const charactersData = await fetch(`${baseurl}/character?limit=10000`)
     const charactersJson = await charactersData.json();
     const characters = charactersJson.characters;
+    console.log(characters);
     launchLoader(true);
 
-    $('.main').addClass('d-flex justify-content-center align-items-center flex-wrap gap-3');
+    $('.main').addClass('d-flex justify-content-center align-items-center flex-wrap gap-3 mx-5');
 
     contentDivHtml = ``;
     for(i = 0; i < characters.length; i++) {
-        if(characters[i].name == "Naruto Uzumaki") {
-            console.log(characters[i]);
-        }
+        let imageSrc = characters[i].images[0];
         contentDivHtml += `
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="${characters[i].images[0]}" alt="Image of ${characters[i].name}" width="250px" />
-                <div class="card-body">
+            <div class="card">
+                <div id="${characters[i].id}" class="card-body">
                     <h5 class="card-title">${characters[i].name}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
+                <img class="card-img-bottom" src="${imageSrc}" alt="Image of ${characters[i].name}" onerror="this.onerror=null;this.src='../img/placeholder.jpeg';" />
             </div>
         `;
     }
@@ -55,3 +52,26 @@ function launchLoader(stop = false) {
 $('.home-button').on('click', function(e) {
     window.location.reload();
 });
+
+
+
+
+//TODO : Pour plus tard - Fonction de recherche (acnh)
+// Fonction qui permet le fonctionnement de la barre de recherche d'un villageois. Je compare le nom anglais et français a chaque fois que je tape une touche, si cela ne correspond pas je lui attribue un display none pour le désafficher. Sinon je lui met/remet un display inline-block pour le remettre sur l'écran.
+// function rechercherVil() {
+//     let userValue = document.getElementById("maRechercheVillageois").value;
+//     userValue = userValue.toLowerCase();
+//     let namesVillager = document.querySelectorAll(".nameVil");
+//     let frenchNamesVillager = document.querySelectorAll(".frenchNameVil");
+//     let cardsVillager = document.querySelectorAll(".card-villager");
+
+//     for (i = 0; i < namesVillager.length; i++) {
+//         if (!namesVillager[i].innerHTML.toLowerCase().includes(userValue) 
+//             && !frenchNamesVillager[i].innerHTML.toLowerCase().includes(userValue)) {
+//             cardsVillager[i].style.display = "none";
+//         }
+//         else {
+//             cardsVillager[i].style.display = "inline-block";
+//         }
+//     }
+// }
