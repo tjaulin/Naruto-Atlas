@@ -1,12 +1,11 @@
 const baseurl = 'https://narutodb.xyz/api'
-const contentDiv = $('.content');
-const charactersButton = $('.characters-button');
 
 $('.characters-button').on('click', function(e) {
     e.preventDefault();
-    console.log('charactersButton clicked');
     launchLoader();
     getAllCharacters();
+    $('.active').removeClass('active');
+    $('.nav-link.characters-button').addClass('active')
 });
 
 async function getAllCharacters() {
@@ -52,3 +51,7 @@ function launchLoader(stop = false) {
         </div>
     `);
 }
+
+$('.home-button').on('click', function(e) {
+    window.location.reload();
+});

@@ -6,8 +6,8 @@
 
 /* Variables */
 :root {
-    --main-color: #FF9E00;
-    --secondary-color: #88dff3;
+    --main-color: #FA9426;
+    --secondary-color: #75C1CC;
     --tertiary-color: black;
 }
 
@@ -17,6 +17,8 @@
     font-family: 'njnaruto';
     src: url('../fonts/njnaruto.ttf') format('truetype');
 }
+
+/* General CSS */
 
 body {
     font-family: Helvetica, sans-serif;
@@ -28,10 +30,22 @@ nav {
     background: linear-gradient(90deg, rgba(255,192,1,1) 0%, rgba(255,148,0,1) 65%, rgba(255,91,1,1) 100%);
 }
 
+h1 {
+    font-family: 'njnaruto', Helvetica, sans-serif;
+    color: var(--main-color);
+}
+
+
+/* Custom CSS */
+
 .presentation {
     border-radius: 15px;
-    padding: 15px;
+    padding: 70px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.presentation h2 {
+    transform: translate(-50%, 50%) !important;
 }
 
 .button {
@@ -49,13 +63,29 @@ nav {
 .button:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px;
-  }
+}
 
+.separator {
+    font-family: 'njnaruto', Helvetica, sans-serif;
+    color: #d98404;
+    font-size: 20px;
+    background: linear-gradient(to right, rgba(255,192,1,1) 0%, rgba(255,148,0,1) 50%, rgba(255,91,1,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
-/* 
-.content {
-    margin: 0 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-} */
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #FA9426;
+  border-radius: 10px;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .50em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .50em;
+}

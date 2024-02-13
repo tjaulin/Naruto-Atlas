@@ -14,36 +14,38 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="Logo" width="200">
+                <img src="./img/logo.png" alt="Logo" width="200" onclick="window.location.reload()">
             </a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Characters</a>
+                    <a class="nav-link home-button active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link characters-button" onclick="getAllCharacters()">Characters</a>
                     <a class="nav-link" href="#">Clans</a>
                 </div>
             </div>
         </div>
-        <a class="navbar-brand" href="#">
-            <img src="./img/kunai.png" alt="Logo" width="140">
-        </a>
+        <div class="navbar-brand">
+            <img src="./img/weapons/kunai.png" alt="Logo" width="140">
+        </div>
     </nav>
 
     <h1 class="title text-center my-4"><img src="./img/logo.png" alt="logo"></h1>
 
     <main class="main">
-    
         <div class="presentation d-flex align-items-center gap-5 mx-5 position-relative">
-            <img class="position-absolute top-0 end-0" src="./img/shuriken.png" alt="shuriken" width="65">
+            <h2 class="position-absolute top-0 start-50 translate-middle">What is Naruto Atlas ?</h2>
+            <img class="position-absolute top-0 end-0" src="./img/weapons/shuriken.png" alt="shuriken" width="65">
+            <img class="position-absolute top-0 start-0" src="./img/weapons/shuriken.png" alt="shuriken" width="65">
+            <img class="position-absolute bottom-0 start-0" src="./img/weapons/shuriken.png" alt="shuriken" width="65">
+            <img class="position-absolute bottom-0 end-0" src="./img/weapons/shuriken.png" alt="shuriken" width="65">
             <img src="./img/all-naruto-characters.jpeg" alt="All naruto characters" width="250">
             <div class="description">
-                <h2 class="text-center">What is Naruto Atlas ?</h2>
-                <br>
+                <p>
                     Naruto Atlas is your ultimate guide to the vast and captivating world of Naruto. Whether you're a long-time fan of the series or just beginning your journey into the ninja-filled universe, our platform is here to provide you with comprehensive information, engaging content, and exciting features.
                     Explore the rich history and lore of Naruto through our extensive database, which includes detailed profiles of characters, villages, clans, jutsu techniques, and much more. Dive deep into the captivating narratives, intricate relationships, and epic battles that have made Naruto a beloved franchise worldwide.<br>
                     With Naruto Atlas, you can:
                 </p>
-                <ul>    
+                <ul>
                     <li>Discover in-depth character profiles, complete with biographies, abilities, and images.</li>
                     <li>Explore detailed information about villages, clans, and other key aspects of the Naruto universe.</li>
                     <li>Learn about various jutsu techniques, their origins, and how they are used in combat.</li>
@@ -56,8 +58,12 @@
                 </p>
             </div>
         </div>
-    
-        <!-- TODO : Crée un séparateur et une phrase disant un truc du genre : "Pour commencer, choisissez ce que vous voulez chercher dans l'univers de Naruto !" -->
+        
+        <div id="separator" class="d-flex align-items-center m-5">
+            <img class="flip-horizontal me-2" src="./img/weapons/kusanagi.png" alt="Kusanagi sword (Orochimaru sword)" width="100">
+            <div id="separator-text" class="separator d-flex justify-content-center align-items-center w-100">Explore Naruto's World</div>
+            <img class="ms-2" src="./img/weapons/kusanagi.png" alt="Kusanagi sword (Orochimaru sword)" width="100">
+        </div>
     
         <div class="buttons d-flex justify-content-center align-items-center mt-5 gap-3">
             <div class="button characters-button">Characters</div>
@@ -68,10 +74,13 @@
 
     
     <!-- JQuery -->
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/lib/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Chroma JS -->
+    <script src="js/lib/chroma.min.js"></script>
     <!-- Custom JS -->
+    <script src="js/components/home.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
